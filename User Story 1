@@ -1,2 +1,1 @@
-composer create-project --prefer-dist laravel/laravel bookManagement
-
+composer create-project --prefer-dist laravel/laravel User Story 1

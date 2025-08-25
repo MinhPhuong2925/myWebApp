@@ -1,0 +1,151 @@
+Chương 1: Giới thiệu về PHP và Laravel Khoa Coursera (Khoa 1):
+
+https://www.coursera.org/leam/laravel-frameworkand-php Module 1:
+
+  1.1 Giới thiệu PHP
+
+PHP (Hypertext Preprocessor) là ngôn ngữ lập trình kịch bản phía server (server-side scripting language).
+Được dùng chủ yếu để phát triển ứng dụng web.
+PHP có thể nhúng trực tiếp vào HTML.
+Chạy trên nhiều hệ điều hành (Windows, Linux, macOS) và hỗ trợ nhiều máy chủ web (Apache, Nginx…).
+Dễ học, cú pháp gần với C, Java.
+
+Ví dụ đơn giản:
+
+---
+<?php
+  echo "Xin chào, đây là trang PHP đầu tiên!";
+?>
+---
+
+Khi chạy trên server, PHP xử lý code và gửi HTML kết quả về cho trình duyệt.
+
+  1.2 Cú pháp PHP
+
+Code PHP bắt đầu bằng <?php và kết thúc bằng ?>.
+Có biến (bắt đầu bằng $).
+Câu lệnh kết thúc bằng dấu ;.
+Có thể viết trong file .php hoặc nhúng vào HTML.
+
+Ví dụ:
+---
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Ví dụ PHP</h1>
+  <?php
+    $name = "Minh Phương";
+    $age = 20;
+    echo "Xin chào $name. Bạn $age tuổi.";
+  ?>
+</body>
+</html>
+---
+
+1.3 Cấu trúc điều khiển
+
+PHP hỗ trợ các cấu trúc điều khiển giống C/Java:
+
+Câu lệnh rẽ nhánh:
+
+
+$diem = 8;
+if ($diem >= 9) {
+    echo "Xuất sắc";
+} elseif ($diem >= 7) {
+    echo "Khá";
+} else {
+    echo "Trung bình";
+}
+
+Vòng lặp for:
+
+
+for ($i = 1; $i <= 5; $i++) {
+    echo "Số: $i <br>";
+}
+
+Vòng lặp while / do…while:
+
+
+$i = 1;
+while ($i <= 3) {
+    echo "Hello $i <br>";
+    $i++;
+}
+
+Vòng lặp foreach (hay dùng với mảng):
+
+
+$fruits = ["Táo", "Cam", "Chuối"];
+foreach ($fruits as $fruit) {
+    echo $fruit . "<br>";
+}
+
+
+---
+
+1.4 Hàm
+
+Hàm dùng để tái sử dụng code.
+
+Được khai báo bằng function.
+
+Có thể có tham số và giá trị trả về.
+
+
+Ví dụ:
+
+function tinhTong($a, $b) {
+    return $a + $b;
+}
+
+echo tinhTong(5, 7); // Kết quả: 12
+
+PHP có nhiều hàm dựng sẵn (built-in functions):
+
+strlen("abc") → Độ dài chuỗi.
+
+date("Y-m-d") → Lấy ngày tháng năm.
+
+count($array) → Đếm số phần tử mảng.
+
+
+
+
+---
+
+1.5 Vai trò của PHP trong phát triển ứng dụng web
+
+Xử lý động dữ liệu: PHP nhận dữ liệu từ người dùng (form HTML), xử lý và trả kết quả.
+
+Kết nối cơ sở dữ liệu: Tích hợp dễ dàng với MySQL, MariaDB, PostgreSQL.
+
+Xây dựng hệ thống web lớn:
+
+Laravel (framework của PHP) giúp viết code nhanh, an toàn, dễ bảo trì.
+
+PHP là nền tảng của nhiều CMS: WordPress, Joomla, Drupal.
+
+
+Ưu điểm: miễn phí, cộng đồng lớn, tài liệu phong phú.
+
+
+Ví dụ: Xử lý form đơn giản
+
+<form method="post">
+  Nhập tên: <input type="text" name="ten">
+  <input type="submit" value="Gửi">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $ten = $_POST["ten"];
+    echo "Xin chào, $ten!";
+}
+?>
+
+
+---
+
+👉 Như vậy, Chương 1 giúp học viên nắm từ cơ bản (cú pháp, biến, hàm, điều khiển) đến ứng dụng thực tế (xử lý form, kết nối DB, framework Laravel).

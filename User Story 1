@@ -1,8 +1,8 @@
-Chương 1: Giới thiệu về PHP và Laravel Khoa Coursera (Khoa 1):
+# Chương 1: Giới thiệu về PHP và Laravel Khoa Coursera (Khoa 1):
 
 https://www.coursera.org/leam/laravel-frameworkand-php Module 1:
 
-  1.1 Giới thiệu PHP
+ ## 1.1 Giới thiệu PHP
 
 PHP (Hypertext Preprocessor) là ngôn ngữ lập trình kịch bản phía server (server-side scripting language).
 Được dùng chủ yếu để phát triển ứng dụng web.
@@ -12,15 +12,15 @@ Dễ học, cú pháp gần với C, Java.
 
 Ví dụ đơn giản:
 
----
+```
 <?php
   echo "Xin chào, đây là trang PHP đầu tiên!";
 ?>
----
+```
 
 Khi chạy trên server, PHP xử lý code và gửi HTML kết quả về cho trình duyệt.
 
-  1.2 Cú pháp PHP
+ ## 1.2 Cú pháp PHP
 
 Code PHP bắt đầu bằng <?php và kết thúc bằng ?>.
 Có biến (bắt đầu bằng $).
@@ -42,7 +42,7 @@ Ví dụ:
 </html>
 ---
 
-1.3 Cấu trúc điều khiển
+  ## 1.3 Cấu trúc điều khiển
 
 PHP hỗ trợ các cấu trúc điều khiển giống C/Java:
 
@@ -85,7 +85,7 @@ foreach ($fruits as $fruit) {
 
 ---
 
-1.4 Hàm
+  ## 1.4 Hàm
 
 Hàm dùng để tái sử dụng code.
 
@@ -115,7 +115,7 @@ count($array) → Đếm số phần tử mảng.
 
 ---
 
-1.5 Vai trò của PHP trong phát triển ứng dụng web
+  ## 1.5 Vai trò của PHP trong phát triển ứng dụng web
 
 Xử lý động dữ liệu: PHP nhận dữ liệu từ người dùng (form HTML), xử lý và trả kết quả.
 
@@ -147,5 +147,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 ---
-
-👉 Như vậy, Chương 1 giúp học viên nắm từ cơ bản (cú pháp, biến, hàm, điều khiển) đến ứng dụng thực tế (xử lý form, kết nối DB, framework Laravel).
